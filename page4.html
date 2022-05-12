@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script language="javascript" type="text/javascript">
+
+        var total=window.prompt("Enter your budget");
+        document.writeln("Your total budget is ",total,"/n");
+        
+        var dis=0;
+
+        if(total>=150000)
+        {
+            document.writeln("<b>You are eligible for All Packages</b>");
+           
+            dis=0.15*total;
+            document.writeln("Your discount amount is ",dis);
+        }
+        else if(total>=100000 && total<=199999)
+        {
+            document.writeln("You are eligible for first and the second package");
+           
+            dis=0.1*total;
+            document.writeln("Your discount amount is ",dis);
+        }
+        else if(total<=100000)
+        {
+            document.writeln("You are eligible for first package.");
+           
+            dis=0.05*total;
+            document.writeln("Your discount amount is ",dis);
+        }
+        else
+        {
+            document.writeln("Your budget amount is too low for any of the packages");
+        }
+
+    </script>
+</body>
+</html>
